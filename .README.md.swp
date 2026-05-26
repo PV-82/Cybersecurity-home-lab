@@ -1,0 +1,31 @@
+# Cybersecurity Home Lab
+
+A personal lab environment built using GitHub Codespaces to practice
+penetration testing, web application security, and defensive security.
+
+## Lab Setup
+- Platform: GitHub Codespaces (Ubuntu Linux)
+- Vulnerable targets: DVWA, OWASP Juice Shop
+- Tools: Nmap, Gobuster, Nikto, SQLMap, Hydra, Burp Suite, Splunk
+
+## Contents
+
+### /notes
+Command references and concept notes built during training.
+
+### /writeups
+TryHackMe and HackTheBox room writeups with methodology and commands.
+
+### /reports
+Formal penetration test reports written against lab targets.
+
+### /scripts
+Custom scripts written to automate tasks.
+
+## Certifications In Progress
+- Google Cybersecurity Certificate
+- TryHackMe Jr Penetration Tester path
+
+## Profiles
+- TryHackMe: [add your link here]
+- LinkedIn: [add your link here]
