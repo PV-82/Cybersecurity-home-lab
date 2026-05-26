@@ -1,0 +1,33 @@
+# Week 1 — Nmap Commands
+
+## What is Nmap?
+Nmap (Network Mapper) is a tool used to discover open ports
+and services on a target. It is the first tool used in almost
+every penetration test.
+
+## Commands I ran today
+
+### nmap 172.17.0.2
+Basic scan. Checks the top 1000 most common ports.
+Found: Port 80 open (HTTP)
+
+### nmap -sV 172.17.0.2
+Service version scan. Identifies what software is running.
+Found: Apache httpd 2.4.25 on Debian Linux
+Why this matters: Apache 2.4.25 is from 2017 and has known CVEs.
+
+### nmap -sV -oN reports/dvwa-nmap-scan.txt 172.17.0.2
+Same scan but saves output to a file.
+-oN means "output Normal format"
+Always do this on real engagements — you need a record.
+
+## Other important Nmap flags to remember
+-sC  : runs default scripts (extra checks automatically)
+-p-  : scans all 65535 ports not just top 1000
+-A   : aggressive scan, combines -sV -sC and OS detection
+-T4  : faster scan speed (T1=slowest, T5=fastest)
+
+## Key lesson
+Version numbers are critical. Knowing the software version
+lets you search for known vulnerabilities (CVEs) against it.
+Search: "Apache 2.4.25 CVE" on Google to see real vulnerabilities.
