@@ -1,0 +1,7 @@
+{
+  "name": "Cybersecurity Lab",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "postCreateCommand": "curl -fsSL https://get.docker.com | sh && sudo usermod -aG docker $USER && sudo apt-get install -y nmap gobuster nikto netcat-traditional tcpdump sqlmap hydra python3-pip && pip3 install requests",
+  "forwardPorts": [8080, 3000, 8000],
+  "remoteUser": "root"
+}
